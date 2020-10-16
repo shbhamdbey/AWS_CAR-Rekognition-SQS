@@ -33,18 +33,15 @@ public class Fifoqueue_CAR {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Fifoqueue_CAR.class, args);
-		// Create a new instance of the builder with all defaults (credentials and
-		// region) set automatically.
-		// For more information, see Creating Service Clients in the AWS SDK for Java
-		// Developer Guide.
+		
 
 		String bucket = "njit-cs-643";
 		String lab = "Car";
 		// String queueUrl =
-		// "https://sqs.us-east-1.amazonaws.com/278160756041/mynew_queue";
+		
 
-		BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIAUBQ5MJVE2IXCY2W4",
-				"fT3b06nWat5H6jZXj7VgnwMyG0CkNPlzhDjCL+qD");
+		BasicAWSCredentials awsCreds = new BasicAWSCredentials("Access Key",
+				"Acces Secret Token ");
 
 		AmazonSQS sqs = AmazonSQSClientBuilder.standard().withCredentials(new AWSStaticCredentialsProvider(awsCreds))
 				.withRegion(Regions.US_EAST_1).build();

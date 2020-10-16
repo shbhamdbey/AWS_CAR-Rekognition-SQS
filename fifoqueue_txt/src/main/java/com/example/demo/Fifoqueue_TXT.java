@@ -32,8 +32,8 @@ public class Fifoqueue_TXT {
 		String queuename = "MyFifo.fifo";
 		//String queueUrl = "https://sqs.us-east-1.amazonaws.com/278160756041/mynew_queue";
 
-		BasicAWSCredentials awsCreds = new BasicAWSCredentials("AKIAUBQ5MJVE2IXCY2W4",
-				"fT3b06nWat5H6jZXj7VgnwMyG0CkNPlzhDjCL+qD");
+		BasicAWSCredentials awsCreds = new BasicAWSCredentials("Access Key",
+				"Acces Secret Token");
 
 		AmazonRekognition rekognitionClient = AmazonRekognitionClientBuilder.standard()
 				.withCredentials(new AWSStaticCredentialsProvider(awsCreds)).withRegion("us-east-1").build();
